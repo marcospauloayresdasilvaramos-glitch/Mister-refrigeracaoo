@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mister Refrigeração</title>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N8BGD5T8');</script>
-    <!-- End Google Tag Manager -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) - Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18509489616"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18509489616');
+    </script>
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8BGD5T8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ========== TOPBAR ========== -->
     <div class="topbar">
@@ -52,8 +49,8 @@
     <section class="hero">
         <div class="hero-content">
             <h2>Restaurando o frio,<br>renovando o conforto.</h2>
-            <p>Especialistas em Geladeiras, Freezers e Ar-Condicionado em Goiânia.</p>
-            <a class="btn" href="https://wa.me/5562994568502?text=Olá! Vim pelo site da Mister Refrigeração e gostaria de um orçamento." target="_blank">
+            <p>Especialistas em Geladeiras e Freezers em Goiânia.</p>
+            <a class="btn" href="https://wa.me/5562994568502?text=Olá! Vim pelo site da Mister Refrigeração e gostaria de um orçamento." target="_blank" onclick="return gtag_report_conversion('https://wa.me/5562994568502?text=Olá! Vim pelo site da Mister Refrigeração e gostaria de um orçamento.');">
                 📲 Solicitar Orçamento
             </a>
         </div>
@@ -68,9 +65,9 @@
         <div class="atalhos">
             <button class="atalho" onclick="abrirWhats('Geladeira')">🧊 Consertar Geladeira</button>
             <button class="atalho" onclick="abrirWhats('Freezer')">❄️ Consertar Freezer</button>
-            <button class="atalho" onclick="abrirWhats('Ar-Condicionado')">🌬️ Consertar Ar-Condicionado</button>
             <button class="atalho" onclick="abrirWhats('Vazamento de Gás')">🛠️ Vazamento de Gás</button>
             <button class="atalho" onclick="abrirWhats('Troca de Compressor')">⚙️ Troca de Compressor</button>
+            <button class="atalho" onclick="abrirWhats('Recarga de Gás')">💨 Recarga de Gás</button>
             <button class="atalho" onclick="abrirWhats('Agendar Visita Técnica')">📅 Agendar Visita Técnica</button>
         </div>
     </section>
@@ -93,11 +90,6 @@
                 <p>Manutenção preventiva e corretiva com garantia.</p>
             </div>
             <div class="card">
-                <div class="icone">🌬️</div>
-                <h3>Ar-Condicionado</h3>
-                <p>Instalação, manutenção e reparo em todas as marcas.</p>
-            </div>
-            <div class="card">
                 <div class="icone">⚙️</div>
                 <h3>Troca de Compressor</h3>
                 <p>Serviço profissional com instalação e testes completos.</p>
@@ -106,6 +98,11 @@
                 <div class="icone">🛠️</div>
                 <h3>Recarga de Gás</h3>
                 <p>Recarga realizada após diagnóstico e correção do sistema.</p>
+            </div>
+            <div class="card">
+                <div class="icone">🥤</div>
+                <h3>Cervejeiras e Expositores</h3>
+                <p>Conserto de cervejeiras, expositores e balcões refrigerados.</p>
             </div>
             <div class="card">
                 <div class="icone">📋</div>
@@ -149,7 +146,7 @@
     <section class="cta">
         <h2>Seu equipamento apresentou defeito?</h2>
         <p>Solicite agora mesmo um orçamento rápido pelo WhatsApp.</p>
-        <a href="https://wa.me/5562994568502" class="btn">📲 Falar com um Técnico</a>
+        <a href="https://wa.me/5562994568502?text=Olá! Preciso de um técnico" class="btn" target="_blank" onclick="return gtag_report_conversion('https://wa.me/5562994568502?text=Olá! Preciso de um técnico');">📲 Falar com um Técnico</a>
     </section>
 
     <!-- ========== AVALIAÇÕES ========== -->
@@ -248,7 +245,7 @@
                 <div>✓ Parque Amazônia</div>
                 <div>✓ Goiânia e região</div>
             </div>
-            <a href="https://wa.me/5562994568502" class="btn">Solicitar Atendimento</a>
+            <a href="https://wa.me/5562994568502?text=Olá! Quero saber se atendem no meu bairro" class="btn" target="_blank" onclick="return gtag_report_conversion('https://wa.me/5562994568502?text=Olá! Quero saber se atendem no meu bairro');">Solicitar Atendimento</a>
         </div>
     </section>
 
@@ -256,7 +253,7 @@
     <section class="cta-final">
         <h2>Precisando de um Técnico Agora?</h2>
         <p>Clique no botão abaixo e fale diretamente com a Mister Refrigeração pelo WhatsApp.</p>
-        <a class="btn" href="https://wa.me/5562994568502">📲 Solicitar Atendimento</a>
+        <a class="btn" href="https://wa.me/5562994568502?text=Olá! Preciso de um técnico agora" target="_blank" onclick="return gtag_report_conversion('https://wa.me/5562994568502?text=Olá! Preciso de um técnico agora');">📲 Solicitar Atendimento</a>
     </section>
 
     <!-- ========== DIAGNÓSTICO ========== -->
@@ -271,7 +268,6 @@
                 <option>Cervejeira</option>
                 <option>Expositor Refrigerado</option>
                 <option>Balcão Refrigerado</option>
-                <option>Ar-Condicionado</option>
             </select>
             <select id="marca">
                 <option value="">Marca</option>
@@ -285,8 +281,6 @@
                 <option>LG</option>
                 <option>Midea</option>
                 <option>Springer Midea</option>
-                <option>Gree</option>
-                <option>Elgin</option>
                 <option>EOS</option>
                 <option>Outra</option>
             </select>
@@ -334,6 +328,8 @@
         </div>
         <div class="copyright">
             © 2026 Mister Refrigeração. Todos os direitos reservados.
+            <br><br>
+            <small>A Mister Refrigeração é um serviço técnico independente e não possui vínculo de autorização com os fabricantes mencionados.</small>
         </div>
     </footer>
 
