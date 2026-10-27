@@ -1,6 +1,6 @@
 /* ===========================
    MISTER REFRIGERAÇÃO
-   CSS COMPLETO CORRIGIDO
+   CSS COMPLETO ATUALIZADO
 =========================== */
 
 * {
@@ -20,7 +20,7 @@ body {
     background: #002b5c;
     color: white;
     padding: 10px 8%;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .topbar-container {
@@ -30,7 +30,12 @@ body {
     max-width: 1400px;
     margin: auto;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
+}
+
+.aviso-restricao {
+    color: #ffb400;
+    font-weight: 600;
 }
 
 /* ========== HEADER ========== */
@@ -80,7 +85,7 @@ nav a:hover {
     color: #ffb400;
 }
 
-/* ========== HERO ========== */
+/* ========== HERO (NOVA IMAGEM) ========== */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -88,9 +93,10 @@ nav a:hover {
     align-items: center;
     text-align: center;
     padding: 140px 20px 80px;
+    /* Imagem de geladeiras/refrigeração do Unsplash (livre de direitos) */
     background:
-        linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80");
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1800&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -575,15 +581,4 @@ footer {
 
 .footer-container p {
     line-height: 2;
-    color: #ddd;
-}
-
-.copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding-top: 20px;
-    text-align: center;
-    color: #bbb;
-    font-size: 15px;
-}
-
-/* =
+    color: #ddd
