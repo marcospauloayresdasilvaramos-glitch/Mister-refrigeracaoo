@@ -573,4 +573,79 @@ footer {
     color: #4db8ff;
 }
 
-.footer-container p
+.footer-container p {
+    line-height: 2;
+    color: #ddd;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 20px;
+    text-align: center;
+    color: #bbb;
+    font-size: 15px;
+}
+
+/* ========== BALÃO FLUTUANTE (FIXO NO CANTO) ========== */
+.floating-balao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #002b5c;
+    color: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+    width: 300px;
+    z-index: 1000;
+    border: 2px solid #ffb400;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.floating-balao .balao-conteudo {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.floating-balao .balao-conteudo strong {
+    color: #ffb400;
+    font-size: 14px;
+}
+
+.floating-balao a {
+    display: block;
+    text-align: center;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.floating-balao a:hover {
+    background: #1fa851;
+    transform: translateY(-2px);
+}
+
+/* No celular, o balão fica um pouco menor para não atrapalhar */
+@media (max-width: 600px) {
+    .floating-balao {
+        width: 240px;
+        bottom: 10px;
+        right: 10px;
+        padding: 12px;
+    }
+    .floating-balao .balao-conteudo {
+        font-size: 11px;
+    }
+    .floating-balao a {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
