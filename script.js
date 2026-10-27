@@ -8,21 +8,19 @@ const NUMERO_WHATSAPP = "5562994568502";
 // GOOGLE ADS - RASTREAMENTO DE CONVERSÃO VIA GTM
 // ==========================================
 function gtag_report_conversion(url) {
-    // Dispara o evento para o GTM (que vai mandar pro Google Ads e Analytics)
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         'event': 'clique_whatsapp',
         'link_url': url
     });
 
-    // Abre o WhatsApp em uma nova aba após um pequeno atraso para o GTM processar
     setTimeout(function() {
         if (typeof(url) != 'undefined') {
             window.open(url, '_blank');
         }
     }, 300); 
 
-    return false; // Impede o link normal de abrir e duplicar
+    return false;
 }
 
 // ==========================================
