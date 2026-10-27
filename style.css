@@ -1,6 +1,6 @@
 /* ===========================
    MISTER REFRIGERAÇÃO
-   CSS COMPLETO ATUALIZADO
+   CSS COMPLETO E CORRIGIDO
 =========================== */
 
 * {
@@ -31,11 +31,6 @@ body {
     margin: auto;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-.aviso-restricao {
-    color: #ffb400;
-    font-weight: 600;
 }
 
 /* ========== HEADER ========== */
@@ -85,7 +80,7 @@ nav a:hover {
     color: #ffb400;
 }
 
-/* ========== HERO (NOVA IMAGEM) ========== */
+/* ========== HERO (FOTO DE TÉCNICO CONSERTANDO GELADEIRA) ========== */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -93,10 +88,9 @@ nav a:hover {
     align-items: center;
     text-align: center;
     padding: 140px 20px 80px;
-    /* Imagem de geladeiras/refrigeração do Unsplash (livre de direitos) */
     background:
-        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-        url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1800&q=80");
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=80");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -579,6 +573,4 @@ footer {
     color: #4db8ff;
 }
 
-.footer-container p {
-    line-height: 2;
-    color: #ddd
+.footer-container p
